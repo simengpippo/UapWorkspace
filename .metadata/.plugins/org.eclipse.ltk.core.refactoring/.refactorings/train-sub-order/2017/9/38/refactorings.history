@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;CorsConfig.java&apos; to &apos;Mopower-sub-charger/src/main/java/com.sgcc.uap&apos;&#x0D;&#x0A;- Original project: &apos;train-sub-order&apos;&#x0D;&#x0A;- Destination element: &apos;Mopower-sub-charger/src/main/java/com.sgcc.uap&apos;&#x0D;&#x0A;- Original element: &apos;com.sgcc.uap.CorsConfig.java&apos;" description="Copy compilation unit" destination="=Mopower-sub-charger/src\/main\/java&lt;com.sgcc.uap" element1="/src\/main\/java&lt;com.sgcc.uap{CorsConfig.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1505807178510" units="1" version="1.0"/>
+</session>

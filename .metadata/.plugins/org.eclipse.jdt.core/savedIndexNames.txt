@@ -1,0 +1,3 @@
+INDEX VERSION 1.129+D:\UapWorkspace\.metadata\.plugins\org.eclipse.jdt.core
+1908209412.index
+2060555263.index

@@ -1,0 +1,25 @@
+<div style="float: left">
+<toolbar params="
+toolbarContent: toolbarContent,
+onItemClick: onItemClick,
+showtext: true"></toolbar>
+</div>
+<div style="float: right">
+<searchbox id="sear" params="fields: fields,
+gridId:'ordergrid'"></searchbox>
+</div>
+<div style="overflow:auto;width:100%">
+<datagrid id="ordergrid" params="
+columns: columns,
+loadMeta: false,
+isShowStripe: true,
+isAllowAppend: false,
+isAllowOperations:true,
+isShowCheckBox:true,
+url: url,
+primaryKey: 'id',
+customOperations:customOperations,
+isAllowDelete: true,
+onSelectedItems:onSelectedItems
+"></datagrid>
+</div>

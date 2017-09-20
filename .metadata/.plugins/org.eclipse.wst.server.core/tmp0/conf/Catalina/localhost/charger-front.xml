@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context docBase="D:\UapWorkspace\SG-UAP\charger-front\WebContent" path="/charger-front" reloadable="true" source="org.eclipse.jst.jee.server:charger-front"><Resources><PreResources base="D:\UapWorkspace\SG-UAP\charger-front\build\classes" classLoaderOnly="false" className="org.apache.catalina.webresources.DirResourceSet" internalPath="/" webAppMount="/WEB-INF/classes"/></Resources></Context>

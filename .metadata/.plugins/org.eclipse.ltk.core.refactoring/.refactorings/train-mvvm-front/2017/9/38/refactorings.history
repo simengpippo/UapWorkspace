@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 5 elements to &apos;WebContent&apos;&#x0D;&#x0A;- Original project: &apos;train-mvvm-front&apos;&#x0D;&#x0A;- Destination element: &apos;WebContent&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     app.js&#x0D;&#x0A;     model.js&#x0D;&#x0A;     index.html&#x0D;&#x0A;     resources&#x0D;&#x0A;     pages" description="Copy elements" element1="WebContent/demo/app.js" element2="WebContent/demo/model.js" element3="WebContent/demo/index.html" element4="WebContent/demo/resources" element5="WebContent/demo/pages" files="3" flags="589830" folders="2" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1505806387401" target="/charger-front/WebContent" units="0" version="1.0"/>
+</session>
