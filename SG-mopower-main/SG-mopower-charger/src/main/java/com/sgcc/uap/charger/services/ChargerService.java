@@ -39,8 +39,16 @@ import javax.persistence.criteria.Root;
  */
 @Service
 public class ChargerService  implements IChargerService{
-/*	@Value("${spring。manufacturer}")
-	private String manufacturer = "";*/
+
+	
+	@Value("${spring。manufacturer}")
+	private String manufacturer = "";
+	
+//	@Value("${spring。stationid}")
+//	private String stationid = "";	
+	
+//	@Value("${spring.batterytype}")
+//	private String batterytype = "";
 	
 	@Autowired 
 	private ChargerRepository chargerRepository;
@@ -48,8 +56,12 @@ public class ChargerService  implements IChargerService{
 	@Override
 	public QueryResultObject getChargerById(String id) {
 		Charger charger = chargerRepository.findOne(id);
-//		List<DicItems>dictList = RestUtils.wrapDictList("manufacturer", manufacturer);
-		return RestUtils.wrappQueryResult(charger);
+		List<DicItems>dictList = RestUtils.wrapDictList("manufacturer", manufacturer);
+//		List<DicItems>dictList1 = RestUtils.wrapDictList("stationid", stationid);
+//		List<DicItems>dictList2 = RestUtils.wrapDictList("batterytype", batterytype);
+		return RestUtils.wrappQueryResult(charger).addDicItems(dictList);
+//				.addDicItems(dictList2);
+//				.addDicItems(dictList1);
 	} 
 	@Override
 	public void remove(IDRequestObject idObject) {
@@ -85,8 +97,8 @@ public class ChargerService  implements IChargerService{
 	}
 	@Override
 	public QueryResultObject query(RequestCondition queryCondition) {
-		List<QueryFilter> qList = queryCondition.getQueryFilter();
 		PageRequest request = this.buildPageRequest(queryCondition);
+		List<QueryFilter> qList = queryCondition.getQueryFilter();
 		Specification<Charger> specification = new Specification<Charger>() {
 
 			@Override
@@ -95,7 +107,7 @@ public class ChargerService  implements IChargerService{
 				if(qList != null && !qList.isEmpty()){
 					for(QueryFilter queryFilter : qList){
 						Path<String> namePath = root.get(queryFilter.getFieldName());
-						if(queryFilter.getFieldName().equals("depId")){
+						if(queryFilter.getFieldName().equals("stationid")){
 							predicate = cb.equal(namePath, queryFilter.getValue());
 						}else{
 							predicate = cb.like(namePath, "%"+queryFilter.getValue()+"%");
@@ -112,7 +124,12 @@ public class ChargerService  implements IChargerService{
 		long count = 0;
 		result = charger.getContent();
 		count = charger.getTotalElements();
-		return RestUtils.wrappQueryResult(result, count);
+		List<DicItems>dictList = RestUtils.wrapDictList("manufacturer", manufacturer);
+//		List<DicItems>dictList1 = RestUtils.wrapDictList("stationid", stationid);
+//		List<DicItems>dictList2 = RestUtils.wrapDictList("batterytype", batterytype);
+		return RestUtils.wrappQueryResult(charger);
+//				.addDicItems(dictList2);
+//				.addDicItems(dictList1);
 	}
 
 	/**

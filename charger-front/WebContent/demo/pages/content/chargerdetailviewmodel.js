@@ -14,9 +14,9 @@ define([], function() {
 		{name:"powerleft",caption:"剩余电量"},
 		{name:"chargerstatus",caption:"充电桩状态"},
 		{name:"chargercapacity",caption:"充电桩容量"},
-		{name:"batterytype",caption:"电池类型",editorType:"DropDownEditor",list:[{value:'0',text:'镍氢电池'},{value:'1',text:'磷酸铁锂电池'},{value:'2',text:'锂离子聚合物电池'}]},
+		{name:"batterytype",caption:"电池类型",editorType:"DropDownEditor"},
 		{name:"deploydate",caption:"部署时间",editorType:"DateTimeEditor"},
-		{name:"manufacturer",caption:"电池制造商",editorType:"DropDownEditor",list:[{value:'0',text:'比亚迪'},{value:'1',text:'松下'},{value:'2',text:'LG'}]},
+		{name:"manufacturer",caption:"电池制造商",editorType:"DropDownEditor"},
 		{name:"remark",caption:"备注",},
 		    ];
 
