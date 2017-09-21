@@ -2,4 +2,6 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="com.sgcc.uap.rest.support.QueryFilter"/>
 <fullyQualifiedTypeName name="org.springframework.data.jpa.domain.Specification"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
+<fullyQualifiedTypeName name="com.sgcc.uap.rest.support.DicItems"/>
 </qualifiedTypeNameHistroy>
