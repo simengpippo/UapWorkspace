@@ -1,0 +1,12 @@
+package com.sgcc.uap.demo.feign;
+
+import org.springframework.cloud.netflix.feign.FeignClient;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+//Feign实现需要定义接口！
+@FeignClient(name="train-sub-empl",fallback=HystrixClientFallback.class) //,fallback=HystrixClientFallback.class
+public interface UserFeignClient {
+	@RequestMapping(value = "/employee/count/{params}")
+	public int getEmployeeCount(@PathVariable("params") String params);
+}

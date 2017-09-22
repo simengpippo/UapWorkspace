@@ -47,8 +47,8 @@ public class ChargerService  implements IChargerService{
 //	@Value("${spring。stationid}")
 //	private String stationid = "";	
 	
-//	@Value("${spring.batterytype}")
-//	private String batterytype = "";
+	@Value("${spring.batterytype}")
+	private String batterytype = "";
 	
 	@Autowired 
 	private ChargerRepository chargerRepository;
@@ -58,10 +58,8 @@ public class ChargerService  implements IChargerService{
 		Charger charger = chargerRepository.findOne(id);
 		List<DicItems>dictList = RestUtils.wrapDictList("manufacturer", manufacturer);
 //		List<DicItems>dictList1 = RestUtils.wrapDictList("stationid", stationid);
-//		List<DicItems>dictList2 = RestUtils.wrapDictList("batterytype", batterytype);
-		return RestUtils.wrappQueryResult(charger).addDicItems(dictList);
-//				.addDicItems(dictList2);
-//				.addDicItems(dictList1);
+		List<DicItems>dictList2 = RestUtils.wrapDictList("batterytype", batterytype);
+		return RestUtils.wrappQueryResult(charger).addDicItems(dictList).addDicItems(dictList2);
 	} 
 	@Override
 	public void remove(IDRequestObject idObject) {
@@ -126,10 +124,8 @@ public class ChargerService  implements IChargerService{
 		count = charger.getTotalElements();
 		List<DicItems>dictList = RestUtils.wrapDictList("manufacturer", manufacturer);
 //		List<DicItems>dictList1 = RestUtils.wrapDictList("stationid", stationid);
-//		List<DicItems>dictList2 = RestUtils.wrapDictList("batterytype", batterytype);
-		return RestUtils.wrappQueryResult(charger);
-//				.addDicItems(dictList2);
-//				.addDicItems(dictList1);
+		List<DicItems>dictList2 = RestUtils.wrapDictList("batterytype", batterytype);
+		return RestUtils.wrappQueryResult(charger).addDicItems(dictList).addDicItems(dictList2);
 	}
 
 	/**

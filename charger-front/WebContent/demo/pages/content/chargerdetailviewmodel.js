@@ -10,18 +10,19 @@ define([], function() {
 		self.id = cube.obj(params.id);
 		self.fields = [
 		{name:"id",caption:"充电桩编号"},
-		{name:"stationid",caption:"所属站点",editorType:"DropDownEditor",list:statinfo},
-		{name:"powerleft",caption:"剩余电量"},
-		{name:"chargerstatus",caption:"充电桩状态"},
-		{name:"chargercapacity",caption:"充电桩容量"},
-		{name:"batterytype",caption:"电池类型",editorType:"DropDownEditor"},
-		{name:"deploydate",caption:"部署时间",editorType:"DateTimeEditor"},
-		{name:"manufacturer",caption:"电池制造商",editorType:"DropDownEditor"},
-		{name:"remark",caption:"备注",},
+		{name:"stationid",caption:"所属站点",editorType:"DropDownEditor",list:statinfo,nullable:false},
+		{name:"powerleft",caption:"剩余电量(kWh)",nullable:false},
+		{name:"chargerstatus",caption:"充电桩状态",editorType:"DropDownEditor",nullable:false},
+		{name:"chargercapacity",caption:"充电桩容量",editorType:"DropDownEditor",nullable:false},
+		{name:"batterytype",caption:"电池类型",editorType:"DropDownEditor",nullable:false},
+		{name:"deploydate",caption:"部署时间",editorType:"DateTimeEditor",format:"yyyy-MM-dd",nullable:false},
+		{name:"manufacturer",caption:"电池制造商",editorType:"DropDownEditor",nullable:false},
+		{name:"remark",caption:"备注"},
 		    ];
 
 		self.saved = function(){
 		cube.indicate("保存成功");
+		app.setLocation("#chargerform");
 		}
 		
 

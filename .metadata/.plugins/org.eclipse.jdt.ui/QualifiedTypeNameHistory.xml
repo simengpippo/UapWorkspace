@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.sgcc.uap.rest.support.QueryFilter"/>
-<fullyQualifiedTypeName name="org.springframework.data.jpa.domain.Specification"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
 <fullyQualifiedTypeName name="com.sgcc.uap.rest.support.DicItems"/>
+<fullyQualifiedTypeName name="org.springframework.data.jpa.domain.Specification"/>
+<fullyQualifiedTypeName name="com.sgcc.uap.rest.support.QueryFilter"/>
+<fullyQualifiedTypeName name="org.springframework.cloud.client.loadbalancer.LoadBalancerClient"/>
+<fullyQualifiedTypeName name="com.sgcc.uap.charger.feign.UserFeignClient"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="org.springframework.cloud.netflix.feign.EnableFeignClients"/>
+<fullyQualifiedTypeName name="org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker"/>
+<fullyQualifiedTypeName name="org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard"/>
 </qualifiedTypeNameHistroy>

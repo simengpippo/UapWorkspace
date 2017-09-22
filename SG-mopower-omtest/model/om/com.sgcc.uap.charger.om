@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Model id="c33ec8c9e9414ae18f2b16742eaa052f" name="charger" displayName="charger" stereotype="3" nameSpace="com.sgcc.uap">
+  <VersionInfo>
+    <CreatedTime>2017-09-22 10:12:12</CreatedTime>
+    <ChangedTime>2017-09-22 10:12:20</ChangedTime>
+    <Description>This is a demo model.</Description>
+    <Version>1.0</Version>
+    <Creator>Administrator</Creator>
+    <Modifier>Administrator</Modifier>
+  </VersionInfo>
+  <Package id="b6d2462a1e4343d4b3e5db669d9f9476" name="charger" displayName="charger" stereotype="3">
+    <Diagrams>
+      <Diagram id="d5f9f1a0bcd74e1296920e86e791f720" name="charger" displayName="charger" stereotype="3">
+        <DiagramStyle>
+          <BackGroundColor>white</BackGroundColor>
+          <GridStyle>false</GridStyle>
+          <ZoomScale>100%</ZoomScale>
+          <Layout></Layout>
+        </DiagramStyle>
+        <Elements>
+          <Element id="4242652244b145c1bfa7cddfbd0a1bff" objectId="e99742654f714fe4a68947356c5e7372">
+            <ElementStyle>
+              <FontFamily></FontFamily>
+              <FontSize>0</FontSize>
+              <Width>150</Width>
+              <Height>200</Height>
+              <Position_X>10.0</Position_X>
+              <Position_Y>40.0</Position_Y>
+              <End_Position_X>0.0</End_Position_X>
+              <End_Position_Y>0.0</End_Position_Y>
+              <Point_List></Point_List>
+              <Border>false</Border>
+              <BorderColor></BorderColor>
+              <BackGroundColor></BackGroundColor>
+            </ElementStyle>
+          </Element>
+        </Elements>
+      </Diagram>
+    </Diagrams>
+    <BusinessClasses>
+      <BusinessClass id="e99742654f714fe4a68947356c5e7372" name="Charger" displayName="Charger" stereotype="3">
+        <TableName>charger</TableName>
+        <IsAbstract>false</IsAbstract>
+        <Properties>
+          <Property id="bc8e5b303e0d493b94370977d58cef9c" name="id" displayName="chargerID" stereotype="3">
+            <GroupId></GroupId>
+            <DataType>string</DataType>
+            <OrderNum>0</OrderNum>
+            <Editor id="a66c4efad7d442a28e1730a2b395431b" name="" displayName="" editorType="TextEditor" dataSourceType="0"/>
+            <DefaultValue></DefaultValue>
+            <DBColumnName>id</DBColumnName>
+            <DBDataType></DBDataType>
+            <DBDataLength>42</DBDataLength>
+            <DBDataPrecision></DBDataPrecision>
+            <QueryProperty>false</QueryProperty>
+            <IsPrimaryKey>true</IsPrimaryKey>
+            <Unique>true</Unique>
+            <Nullable>false</Nullable>
+            <ReadOnly>false</ReadOnly>
+            <IndexedColumn>false</IndexedColumn>
+            <Persistence>true</Persistence>
+            <PkName></PkName>
+            <PrimaryKeyPloy>UUID</PrimaryKeyPloy>
+          </Property>
+          <Property id="145811ca5ec649d5b5f95a3e0bdb40f6" name="stationid" displayName="stationID" stereotype="3">
+            <GroupId></GroupId>
+            <DataType>string</DataType>
+            <OrderNum>1</OrderNum>
+            <Editor id="15e10d05d3434475b8755d7c9e2de311" name="" displayName="" stereotype="3" editorType="TextEditor" dataSourceType="0"/>
+            <DefaultValue></DefaultValue>
+            <DBColumnName>stationid</DBColumnName>
+            <DBDataType></DBDataType>
+            <DBDataLength>42</DBDataLength>
+            <DBDataPrecision>0</DBDataPrecision>
+            <QueryProperty>false</QueryProperty>
+            <IsPrimaryKey>false</IsPrimaryKey>
+            <Unique>false</Unique>
+            <Nullable>true</Nullable>
+            <ReadOnly>false</ReadOnly>
+            <IndexedColumn>false</IndexedColumn>
+            <Persistence>true</Persistence>
+          </Property>
+          <Property id="eda6130df7574eec9a0c67b59a4aed1f" name="powerleft" displayName="powerLeft" stereotype="3">
+            <GroupId></GroupId>
+            <DataType>float</DataType>
+            <OrderNum>2</OrderNum>
+            <Editor id="2b4873bab8d9411b887a275c96182512" name="" displayName="" stereotype="3" editorType="NumberEditor" dataSourceType="0"/>
+            <DefaultValue></DefaultValue>
+            <DBColumnName>powerleft</DBColumnName>
+            <DBDataType></DBDataType>
+            <DBDataLength>30</DBDataLength>
+            <DBDataPrecision>5</DBDataPrecision>
+            <QueryProperty>false</QueryProperty>
+            <IsPrimaryKey>false</IsPrimaryKey>
+            <Unique>false</Unique>
+            <Nullable>true</Nullable>
+            <ReadOnly>false</ReadOnly>
+            <IndexedColumn>false</IndexedColumn>
+            <Persistence>true</Persistence>
+          </Property>
+          <Property id="c5d7b11aa4fc4489895de02f2471cdb1" name="chargerstatus" displayName="0  1  2  " stereotype="3">
+            <GroupId></GroupId>
+            <DataType>string</DataType>
+            <OrderNum>3</OrderNum>
+            <Editor id="9bfd423115684d2b8622b53b9fc280a0" name="" displayName="" stereotype="3" editorType="TextEditor" dataSourceType="0"/>
+            <DefaultValue></DefaultValue>
+            <DBColumnName>chargerstatus</DBColumnName>
+            <DBDataType></DBDataType>
+            <DBDataLength>255</DBDataLength>
+            <DBDataPrecision>0</DBDataPrecision>
+            <QueryProperty>false</QueryProperty>
+            <IsPrimaryKey>false</IsPrimaryKey>
+            <Unique>false</Unique>
+            <Nullable>true</Nullable>
+            <ReadOnly>false</ReadOnly>
+            <IndexedColumn>false</IndexedColumn>
+            <Persistence>true</Persistence>
+          </Property>
+          <Property id="b7aeec379fd449a38169534a51655142" name="chargercapacity" displayName="chargerCapacity" stereotype="3">
+            <GroupId></GroupId>
+            <DataType>float</DataType>
+            <OrderNum>4</OrderNum>
+            <Editor id="4f95fc1ee3c8421dafcfbcf66b93f7a2" name="" displayName="" stereotype="3" editorType="NumberEditor" dataSourceType="0"/>
+            <DefaultValue></DefaultValue>
+            <DBColumnName>chargercapacity</DBColumnName>
+            <DBDataType></DBDataType>
+            <DBDataLength>30</DBDataLength>
+            <DBDataPrecision>5</DBDataPrecision>
+            <QueryProperty>false</QueryProperty>
+            <IsPrimaryKey>false</IsPrimaryKey>
+            <Unique>false</Unique>
+            <Nullable>true</Nullable>
+            <ReadOnly>false</ReadOnly>
+            <IndexedColumn>false</IndexedColumn>
+            <Persistence>true</Persistence>
+          </Property>
+          <Property id="5a41c24f27ac4979adad3db605c942c2" name="batterytype" displayName="batteryType" stereotype="3">
+            <GroupId></GroupId>
+            <DataType>string</DataType>
+            <OrderNum>5</OrderNum>
+            <Editor id="440d598e7cc341efa36c7ad15ee9f5b7" name="" displayName="" stereotype="3" editorType="TextEditor" dataSourceType="0"/>
+            <DefaultValue></DefaultValue>
+            <DBColumnName>batterytype</DBColumnName>
+            <DBDataType></DBDataType>
+            <DBDataLength>255</DBDataLength>
+            <DBDataPrecision>0</DBDataPrecision>
+            <QueryProperty>false</QueryProperty>
+            <IsPrimaryKey>false</IsPrimaryKey>
+            <Unique>false</Unique>
+            <Nullable>true</Nullable>
+            <ReadOnly>false</ReadOnly>
+            <IndexedColumn>false</IndexedColumn>
+            <Persistence>true</Persistence>
+          </Property>
+          <Property id="faf9bb86ddf245b79eec0785af0b8989" name="deploydate" displayName="deployDate" stereotype="3">
+            <GroupId></GroupId>
+            <DataType>string</DataType>
+            <OrderNum>6</OrderNum>
+            <Editor id="e55ee1c9f1944013878e3b75ba9980ef" name="" displayName="" stereotype="3" editorType="TextEditor" dataSourceType="0"/>
+            <DefaultValue></DefaultValue>
+            <DBColumnName>deploydate</DBColumnName>
+            <DBDataType></DBDataType>
+            <DBDataLength>255</DBDataLength>
+            <DBDataPrecision>0</DBDataPrecision>
+            <QueryProperty>false</QueryProperty>
+            <IsPrimaryKey>false</IsPrimaryKey>
+            <Unique>false</Unique>
+            <Nullable>true</Nullable>
+            <ReadOnly>false</ReadOnly>
+            <IndexedColumn>false</IndexedColumn>
+            <Persistence>true</Persistence>
+          </Property>
+          <Property id="2c7165dab4c74fe088c0f5aa870871d9" name="manufacturer" displayName="manufacturer" stereotype="3">
+            <GroupId></GroupId>
+            <DataType>string</DataType>
+            <OrderNum>7</OrderNum>
+            <Editor id="bbf44a0b6fea4c37965533519c5af6c3" name="" displayName="" stereotype="3" editorType="TextEditor" dataSourceType="0"/>
+            <DefaultValue></DefaultValue>
+            <DBColumnName>manufacturer</DBColumnName>
+            <DBDataType></DBDataType>
+            <DBDataLength>255</DBDataLength>
+            <DBDataPrecision>0</DBDataPrecision>
+            <QueryProperty>false</QueryProperty>
+            <IsPrimaryKey>false</IsPrimaryKey>
+            <Unique>false</Unique>
+            <Nullable>true</Nullable>
+            <ReadOnly>false</ReadOnly>
+            <IndexedColumn>false</IndexedColumn>
+            <Persistence>true</Persistence>
+          </Property>
+          <Property id="232f11698b7f4ad69fa66bb162b43778" name="remark" displayName="备注" stereotype="3">
+            <GroupId></GroupId>
+            <DataType>string</DataType>
+            <OrderNum>8</OrderNum>
+            <Editor id="39474072cc664b81ad8764aa33b50470" name="" displayName="" stereotype="3" editorType="TextEditor" dataSourceType="0"/>
+            <DefaultValue></DefaultValue>
+            <DBColumnName>remark</DBColumnName>
+            <DBDataType></DBDataType>
+            <DBDataLength>255</DBDataLength>
+            <DBDataPrecision>0</DBDataPrecision>
+            <QueryProperty>false</QueryProperty>
+            <IsPrimaryKey>false</IsPrimaryKey>
+            <Unique>false</Unique>
+            <Nullable>true</Nullable>
+            <ReadOnly>false</ReadOnly>
+            <IndexedColumn>false</IndexedColumn>
+            <Persistence>true</Persistence>
+          </Property>
+        </Properties>
+        <ExtendAttributies/>
+        <Operations>
+          <Operation id="9b6c2f10ddce44a18b76f75d405a423f" name="add" displayName="新增" stereotype="3" operationType="standard"/>
+          <Operation id="dab5a500aafa4acc9967ded8d15ddff3" name="update" displayName="编辑" stereotype="3" operationType="standard"/>
+          <Operation id="e835d863eff74228875823bb4ce0c48d" name="delete" displayName="删除" stereotype="3" operationType="standard"/>
+          <Operation id="eba5a33d79af4ea5bac3aa2cce53f686" name="get" displayName="获取详情" stereotype="3" operationType="standard"/>
+          <Operation id="37569e21f54f43bcb86e7b2ebf904b27" name="query" displayName="查询列表" stereotype="3" operationType="standard"/>
+        </Operations>
+      </BusinessClass>
+    </BusinessClasses>
+  </Package>
+</Model>

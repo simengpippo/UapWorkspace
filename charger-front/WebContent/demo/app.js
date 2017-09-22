@@ -3,7 +3,7 @@ define(['text'], function(text) {
 	cube.gatewayURL_dept = "http://localhost:9999";
 	cube.gatewayURL_emp = "http://localhost:9996";
 	cube.gatewayURL_orderform = "http://localhost:9997";
-	cube.gatewayURL_charger = "http://localhost:808";
+	cube.gatewayURL_charger = "http://192.168.8.155:8050";
 	cube.importComponent("controls.menu");
 	cube.importComponent("layout.include");
 	cube.importComponent("datacontainer.tree");
