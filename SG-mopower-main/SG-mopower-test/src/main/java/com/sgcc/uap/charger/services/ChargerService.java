@@ -43,7 +43,7 @@ import javax.persistence.criteria.Root;
 @Service
 public class ChargerService  implements IChargerService{
 	
-	@Value("${spring。manufacturer}")
+	@Value("${spring.manufacturer}")
 	private String manufacturer = "";
 	
 	@Value("${spring.chargerstatus}")

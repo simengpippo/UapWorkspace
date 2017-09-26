@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\UapWorkspace\SG-mopower-omtest"/>
+		<item value="C:\UapWorkspace\SG-mopower-om"/>
+		<item value="C:\UapWorkspace\SG-mopower-main"/>
+		<item value="C:\UapWorkspace\Servers"/>
+		<item value="C:\UapWorkspace\charger-front"/>
 		<item value="D:\UapWorkspace\charger-front"/>
 		<item value="D:\UapWorkspace\SG-UAP\charger-front"/>
 		<item value="C:\Users\Administrator\Desktop\train-sub-order"/>
