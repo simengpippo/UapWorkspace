@@ -23,7 +23,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1506047370390</id>
+			<id>1506569147204</id>
 			<name></name>
 			<type>26</type>
 			<matcher>
@@ -31,11 +31,19 @@
 				<arguments>
 					<matcher>
 						<id>org.eclipse.ui.ide.multiFilter</id>
+						<arguments>1.0-projectRelativePath-equals-true-false-SG-charger</arguments>
+					</matcher>
+					<matcher>
+						<id>org.eclipse.ui.ide.multiFilter</id>
 						<arguments>1.0-projectRelativePath-equals-true-false-SG-mopower-charger</arguments>
 					</matcher>
 					<matcher>
 						<id>org.eclipse.ui.ide.multiFilter</id>
 						<arguments>1.0-projectRelativePath-equals-true-false-SG-mopower-test</arguments>
+					</matcher>
+					<matcher>
+						<id>org.eclipse.ui.ide.multiFilter</id>
+						<arguments>1.0-projectRelativePath-equals-true-false-sg-charger-final</arguments>
 					</matcher>
 				</arguments>
 			</matcher>

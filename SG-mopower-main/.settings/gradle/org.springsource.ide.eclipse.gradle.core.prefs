@@ -1,5 +1,5 @@
 #org.springsource.ide.eclipse.gradle.core.preferences.GradleProjectPreferences
-#Fri Sep 22 10:10:16 CST 2017
-build.family.org.gradle.tooling.model.eclipse.HierarchicalEclipseProject=;SG-mopower-charger;SG-mopower-test;
+#Thu Sep 28 11:25:44 CST 2017
+build.family.org.gradle.tooling.model.eclipse.HierarchicalEclipseProject=;SG-charger;SG-mopower-charger;SG-mopower-test;sg-charger-final;
 org.springsource.ide.eclipse.gradle.linkedresources=
 org.springsource.ide.eclipse.gradle.rootprojectloc=

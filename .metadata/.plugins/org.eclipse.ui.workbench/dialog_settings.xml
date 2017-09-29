@@ -20,7 +20,6 @@
 		<item value="com.sgcc.uap.mdd.designer.wizards.MicroGeneratorWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
 			<item value="com.sgcc.uap.ide.core.ui.wizard.category.microservice"/>
-			<item value="com.sgcc.uap.ide.wizard.category"/>
 		</list>
 	</section>
 	<section name="ImportExportAction">

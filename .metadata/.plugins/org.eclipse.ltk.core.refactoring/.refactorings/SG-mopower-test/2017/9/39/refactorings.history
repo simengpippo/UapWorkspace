@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.sgcc.uap.charger.feign&apos; to &apos;SG-charger/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;SG-mopower-test&apos;&#x0D;&#x0A;- Destination element: &apos;SG-charger/src/main/java&apos;&#x0D;&#x0A;- Original element: &apos;SG-mopower-test/src/main/java/com.sgcc.uap.charger.feign&apos;" description="Copy package" destination="=SG-charger/src\/main\/java" element1="/src\/main\/java&lt;com.sgcc.uap.charger.feign" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1506566073330" version="1.0"/>
+</session>

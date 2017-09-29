@@ -1,1 +1,1 @@
-include 'SG-mopower-charger','SG-mopower-test'
+include 'SG-mopower-charger','SG-mopower-test','SG-charger','SG-charger','sg-charger-final'
